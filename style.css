@@ -213,6 +213,7 @@ input, textarea{
 
     #main aside{
         width: 100%;
+        padding: 0;
         border-right: none;
         border-bottom: dotted 2px #99845e;
     }
