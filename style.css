@@ -88,7 +88,7 @@ input, textarea{
     text-align: start;
     background: rgb(36, 36, 36);
     width: 90%;
-    height: 15%;
+    height: 100%;
     padding: 10px;
     margin-right: 10px;
     border-right: dotted 2px #99845e;
@@ -99,6 +99,10 @@ input, textarea{
     padding: 0;
     text-align: center;
     list-style: none;
+}
+
+#main aside > ol > li{
+    margin-bottom: 30px;
 }
 
 #main aside > h3{
@@ -200,12 +204,16 @@ input, textarea{
 
     #nav ol > li{
         text-align: center;
-        padding: 10px 10px;
-        width: 95%;
+        padding: 10px 0px;
+        width: 100%;
     }
     
+    #main{
+        display: block;
+    }
+
     #main aside{
-        display:none;
+        width: 100%;
     }
 
     #footer{
