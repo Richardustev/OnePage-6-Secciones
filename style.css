@@ -1,0 +1,179 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+}
+
+html{
+    width: 100%;
+    background-image: url(./img/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color: #9d7053;
+    font-family: 'Oswald', sans-serif;
+}
+
+#header{
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    align-items: center;
+    background-image: url(./img/header-wall.jpg);
+    background-size: cover;
+    padding-bottom: 5px;
+    border-bottom: solid 5px #ffff;
+}
+
+#header h1{
+    margin: 25px 20px;
+    font-size: 50px;
+    color: #d6992f;
+}
+
+#header h2{
+    color: #ffff;
+    font-size: 25px;
+    border-bottom: solid 5px #d6992f;
+}
+
+#nav{
+    background-color: rgb(226, 226, 226);
+}
+
+#nav ol{
+    display: flex;
+    padding: 0px;
+    list-style: none;
+}
+
+#nav ol > li{
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+#nav li:hover{
+    background-color: #99845e;
+}
+
+#nav a:hover{
+    color: #ffff;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #e6d9b6;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 0px;
+}
+
+#main aside{
+    text-align: start;
+    background: rgb(36, 36, 36);
+    width: 90%;
+    height: 15%;
+    padding: 10px;
+    margin-right: 10px;
+    border-right: dotted 2px #99845e;
+    border-bottom: dotted 2px #99845e;
+}
+
+#main aside > ol{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+#main aside > h3{
+    color: #d6992f;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: dotted 2px #ffff;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+#main aside a:hover{
+    color: #d6992f;
+}
+
+#main a{
+    color: #ffff;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+#main h4{
+    text-align: start;
+    margin-left: 30px;
+    color: #242424;
+}
+
+#main h5{
+    text-align: start;
+    font-size: 20px;
+    margin-left: 30px;
+    color: #242424;
+}
+
+#main .main-info1{
+    text-align: center;
+    font-size: 30px;
+    color: #d6992f;
+    font-family: 'Anton', sans-serif;
+}
+
+#main .main-info1 > p{
+    font-family: 'Oswald', sans-serif;
+    margin: 0 30px;
+    text-align: justify;
+    font-size: 16px;
+    color: #242424;
+}
+
+#footer{
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    background: #242424;
+}
+
+.center{
+    text-align: center;
+}
+
+.active-page{
+    background-color: #ae966a;
+}
+
+.active-page a{
+    color: #ffff;
+}
+
+@media screen and (max-width: 900px){
+    #main{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    #nav ol{
+        display: block;
+    }
+    
+    #main aside{
+        display:none;
+    }
+}
