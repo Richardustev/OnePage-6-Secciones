@@ -11,12 +11,20 @@ html{
     background-image: url(./img/wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
     color: #9d7053;
     font-family: 'Oswald', sans-serif;
+}
+
+input, textarea{
+    width: 80%;
+    padding: 5px;
+    border: solid 3px #d6992f;
+    margin-bottom: 10px;
 }
 
 #header{
@@ -141,14 +149,27 @@ a{
 }
 
 #footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Oswald', sans-serif;
     color: #ffff;
-    text-align: center;
-    padding: 15px;
     padding-bottom: 30px;
     font-size: 15px;
     margin-bottom: 0px;
     background: #242424;
+}
+
+#footer .grid-footer-info{
+    height: 100%;
+    margin: 0 15%;
+    text-align: justify;
+    align-items: center;
+
+}
+
+#footer .grid-footer-location{
+    width: fit-content;
+    margin: 5px auto;
 }
 
 .center{
@@ -185,5 +206,10 @@ a{
     
     #main aside{
         display:none;
+    }
+
+    #footer{
+        display: block;
+        text-align: center;
     }
 }
