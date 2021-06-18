@@ -164,6 +164,10 @@ a{
 }
 
 @media screen and (max-width: 900px){
+    #header{
+        flex-direction: column;
+    }
+    
     #main{
         width: 100%;
         grid-template-columns: 1fr;
@@ -171,6 +175,12 @@ a{
 
     #nav ol{
         display: block;
+    }
+
+    #nav ol > li{
+        text-align: center;
+        padding: 10px 10px;
+        width: 95%;
     }
     
     #main aside{
