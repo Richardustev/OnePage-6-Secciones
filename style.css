@@ -92,7 +92,6 @@ input, textarea{
     padding: 10px;
     margin-right: 10px;
     border-right: dotted 2px #99845e;
-    border-bottom: dotted 2px #99845e;
 }
 
 #main aside > ol{
@@ -214,6 +213,12 @@ input, textarea{
 
     #main aside{
         width: 100%;
+        border-right: none;
+        border-bottom: dotted 2px #99845e;
+    }
+
+    #main aside > ol > li{
+        margin-bottom: 10px;
     }
 
     #footer{
